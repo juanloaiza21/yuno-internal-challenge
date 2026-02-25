@@ -1,15 +1,15 @@
-/// Test data generation for the routing engine.
-///
-/// Generates realistic transaction data for FashionForward's
-/// Brazil, Mexico, and Colombia operations. Uses seeded RNG
-/// for reproducible datasets across runs.
-///
-/// # Data Distribution
-/// - 210 transactions (~70 per country)
-/// - 15 unique customers (some with many transactions)
-/// - Amount range: $10–$500 USD equivalent
-/// - Realistic fake BINs per country
-/// - Timestamps spread across a business day
+//! Test data generation for the routing engine.
+//!
+//! Generates realistic transaction data for FashionForward's
+//! Brazil, Mexico, and Colombia operations. Uses seeded RNG
+//! for reproducible datasets across runs.
+//!
+//! # Data Distribution
+//! - 210 transactions (~70 per country)
+//! - 15 unique customers (some with many transactions)
+//! - Amount range: $10–$500 USD equivalent
+//! - Realistic fake BINs per country
+//! - Timestamps spread across a business day
 
 use crate::models::transaction::{Country, Currency, Transaction};
 use rand::rngs::StdRng;

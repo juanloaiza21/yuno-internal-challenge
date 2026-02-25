@@ -1,20 +1,20 @@
-/// PSP Simulator — simulates realistic payment processor behavior.
-///
-/// Each PSP has different success rates, decline reason distributions,
-/// and response latencies. The simulator uses deterministic seeding
-/// based on transaction + PSP attributes for reproducible results.
-///
-/// # Simulation Design
-///
-/// The simulator produces three tiers of outcomes:
-/// - **Hard declines (~6%)**: Card-level failures (insufficient funds, expired card).
-///   These are PSP-independent — the same card always hard-declines regardless of PSP.
-/// - **Soft declines (~20-25%)**: PSP-dependent failures that may succeed on retry.
-///   Different PSPs get different seeds, so PSP#1 may decline while PSP#2 approves.
-/// - **Approvals (~70-75%)**: Transaction is approved.
-///
-/// This design ensures that smart retry logic produces measurable improvement
-/// over single-PSP routing.
+//! PSP Simulator — simulates realistic payment processor behavior.
+//!
+//! Each PSP has different success rates, decline reason distributions,
+//! and response latencies. The simulator uses deterministic seeding
+//! based on transaction + PSP attributes for reproducible results.
+//!
+//! # Simulation Design
+//!
+//! The simulator produces three tiers of outcomes:
+//! - **Hard declines (~6%)**: Card-level failures (insufficient funds, expired card).
+//!   These are PSP-independent — the same card always hard-declines regardless of PSP.
+//! - **Soft declines (~20-25%)**: PSP-dependent failures that may succeed on retry.
+//!   Different PSPs get different seeds, so PSP#1 may decline while PSP#2 approves.
+//! - **Approvals (~70-75%)**: Transaction is approved.
+//!
+//! This design ensures that smart retry logic produces measurable improvement
+//! over single-PSP routing.
 
 pub mod config;
 

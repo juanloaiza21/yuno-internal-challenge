@@ -1,9 +1,9 @@
-/// PSP configurations for each country.
-///
-/// FashionForward operates in Brazil, Mexico, and Colombia,
-/// with 3 PSPs configured per country (9 total). Each PSP has
-/// distinct success rates, latency profiles, fees, and decline
-/// reason distributions based on real-world LatAm payment processors.
+//! PSP configurations for each country.
+//!
+//! FashionForward operates in Brazil, Mexico, and Colombia,
+//! with 3 PSPs configured per country (9 total). Each PSP has
+//! distinct success rates, latency profiles, fees, and decline
+//! reason distributions based on real-world LatAm payment processors.
 
 use crate::models::psp::{DeclineReason, PspConfig};
 use crate::models::transaction::Country;
