@@ -8,6 +8,15 @@ This is the shared library crate (`lib.rs`) imported by every serverless handler
 
 - **`lib.rs`** — Crate root. Exposes `version()` helper and re-exports all public modules.
 
+- **`report/mod.rs`** — Performance report generator. Compares no-retry vs smart-retry routing scenarios.
+  - `generate_report(transactions, engine, strategy) → PerformanceReport` — Main entry point. Runs both scenarios, computes metrics, builds country and PSP breakdowns.
+  - `run_no_retry(transactions, engine) → Vec<RoutingResult>` — (private) Runs each transaction through single-PSP routing.
+  - `run_smart_retry(transactions, engine, strategy) → Vec<RoutingResult>` — (private) Runs each transaction through full routing engine.
+  - `calculate_metrics(results) → ScenarioResult` — (private) Computes aggregate metrics (approved count, auth rate, avg attempts, avg latency).
+  - `build_country_breakdown(...)` — (private) Groups results by country and computes per-country auth rates.
+  - `build_psp_breakdown(results)` — (private) Aggregates per-PSP metrics from routing attempts.
+  - Includes unit tests for metrics calculation, country breakdown, PSP breakdown, and round2 helper.
+
 ## Adding New Modules
 
 1. Create the file: `src/<module_name>.rs` (snake_case, singular noun preferred — e.g. `payment.rs`, `error.rs`, `util.rs`).
