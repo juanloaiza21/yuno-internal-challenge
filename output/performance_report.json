@@ -1,0 +1,107 @@
+{
+  "total_transactions": 210,
+  "no_retry": {
+    "approved": 138,
+    "declined": 72,
+    "authorization_rate": 65.71,
+    "avg_attempts": 1.0,
+    "avg_latency_ms": 280.44
+  },
+  "smart_retry": {
+    "approved": 195,
+    "declined": 15,
+    "authorization_rate": 92.86,
+    "avg_attempts": 1.2,
+    "avg_latency_ms": 317.7
+  },
+  "improvement": {
+    "rate_lift_percentage": 27.15,
+    "additional_approvals": 57,
+    "estimated_revenue_recovered_usd": 10409.72
+  },
+  "by_country": {
+    "Brazil": {
+      "no_retry_rate": 72.86,
+      "smart_retry_rate": 95.71,
+      "improvement": 22.85,
+      "total_transactions": 70
+    },
+    "Colombia": {
+      "no_retry_rate": 68.57,
+      "smart_retry_rate": 90.0,
+      "improvement": 21.43,
+      "total_transactions": 70
+    },
+    "Mexico": {
+      "no_retry_rate": 55.71,
+      "smart_retry_rate": 92.86,
+      "improvement": 37.15,
+      "total_transactions": 70
+    }
+  },
+  "by_psp": {
+    "PagSeguro": {
+      "total_attempts": 16,
+      "approvals": 11,
+      "declines": 4,
+      "approval_rate": 68.75,
+      "avg_latency_ms": 289.06
+    },
+    "Cielo": {
+      "total_attempts": 70,
+      "approvals": 53,
+      "declines": 9,
+      "approval_rate": 75.71,
+      "avg_latency_ms": 199.84
+    },
+    "Conekta": {
+      "total_attempts": 22,
+      "approvals": 15,
+      "declines": 5,
+      "approval_rate": 68.18,
+      "avg_latency_ms": 265.14
+    },
+    "Bold": {
+      "total_attempts": 2,
+      "approvals": 1,
+      "declines": 1,
+      "approval_rate": 50.0,
+      "avg_latency_ms": 364.5
+    },
+    "PayU": {
+      "total_attempts": 12,
+      "approvals": 10,
+      "declines": 1,
+      "approval_rate": 83.33,
+      "avg_latency_ms": 287.58
+    },
+    "Wompi": {
+      "total_attempts": 70,
+      "approvals": 52,
+      "declines": 16,
+      "approval_rate": 74.29,
+      "avg_latency_ms": 222.59
+    },
+    "SR Pago": {
+      "total_attempts": 7,
+      "approvals": 4,
+      "declines": 3,
+      "approval_rate": 57.14,
+      "avg_latency_ms": 398.29
+    },
+    "Stone": {
+      "total_attempts": 5,
+      "approvals": 3,
+      "declines": 1,
+      "approval_rate": 60.0,
+      "avg_latency_ms": 488.0
+    },
+    "OpenPay": {
+      "total_attempts": 70,
+      "approvals": 46,
+      "declines": 17,
+      "approval_rate": 65.71,
+      "avg_latency_ms": 246.87
+    }
+  }
+}

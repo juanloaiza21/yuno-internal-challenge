@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "txn_0001",
+    "amount": 106.87,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "2487",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T08:37:24Z"
+  },
+  {
+    "id": "txn_0002",
+    "amount": 419.77,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "8492",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T08:30:23Z"
+  },
+  {
+    "id": "txn_0003",
+    "amount": 110.05,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "5230",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T08:39:38Z"
+  },
+  {
+    "id": "txn_0004",
+    "amount": 41.59,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "4636",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T08:18:26Z"
+  },
+  {
+    "id": "txn_0005",
+    "amount": 277.7,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "2035",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T08:55:55Z"
+  },
+  {
+    "id": "txn_0006",
+    "amount": 178.02,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "6456",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T08:04:05Z"
+  },
+  {
+    "id": "txn_0007",
+    "amount": 88.83,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "9866",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T08:09:15Z"
+  },
+  {
+    "id": "txn_0008",
+    "amount": 490.39,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "4914",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T08:46:47Z"
+  },
+  {
+    "id": "txn_0009",
+    "amount": 32.11,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "9857",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T08:53:38Z"
+  },
+  {
+    "id": "txn_0010",
+    "amount": 66.45,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "9670",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T08:06:33Z"
+  },
+  {
+    "id": "txn_0011",
+    "amount": 74.65,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "2446",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T08:28:57Z"
+  },
+  {
+    "id": "txn_0012",
+    "amount": 122.53,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "8701",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T08:55:02Z"
+  },
+  {
+    "id": "txn_0013",
+    "amount": 64.55,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7567",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T08:43:53Z"
+  },
+  {
+    "id": "txn_0014",
+    "amount": 292.3,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "5762",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T08:15:05Z"
+  },
+  {
+    "id": "txn_0015",
+    "amount": 53.9,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "5728",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T08:10:14Z"
+  },
+  {
+    "id": "txn_0016",
+    "amount": 448.16,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "8753",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T08:38:16Z"
+  },
+  {
+    "id": "txn_0017",
+    "amount": 179.52,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "5290",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T08:27:35Z"
+  },
+  {
+    "id": "txn_0018",
+    "amount": 446.97,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "2032",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T08:32:11Z"
+  },
+  {
+    "id": "txn_0019",
+    "amount": 497.84,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "7615",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T09:35:07Z"
+  },
+  {
+    "id": "txn_0020",
+    "amount": 34.61,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "2012",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T09:46:27Z"
+  },
+  {
+    "id": "txn_0021",
+    "amount": 62.19,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "3938",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T09:03:12Z"
+  },
+  {
+    "id": "txn_0022",
+    "amount": 19.99,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "1343",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T09:07:10Z"
+  },
+  {
+    "id": "txn_0023",
+    "amount": 182.4,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "3160",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T09:15:52Z"
+  },
+  {
+    "id": "txn_0024",
+    "amount": 69.84,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "1024",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T09:08:07Z"
+  },
+  {
+    "id": "txn_0025",
+    "amount": 282.19,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7810",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T09:15:27Z"
+  },
+  {
+    "id": "txn_0026",
+    "amount": 147.96,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "1582",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T09:19:43Z"
+  },
+  {
+    "id": "txn_0027",
+    "amount": 51.23,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "0003",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T09:51:19Z"
+  },
+  {
+    "id": "txn_0028",
+    "amount": 115.25,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "5362",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T09:15:29Z"
+  },
+  {
+    "id": "txn_0029",
+    "amount": 139.51,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "0013",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T09:05:05Z"
+  },
+  {
+    "id": "txn_0030",
+    "amount": 58.41,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "7246",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T09:16:03Z"
+  },
+  {
+    "id": "txn_0031",
+    "amount": 173.36,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "9544",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T09:07:26Z"
+  },
+  {
+    "id": "txn_0032",
+    "amount": 62.69,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "3351",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T09:27:24Z"
+  },
+  {
+    "id": "txn_0033",
+    "amount": 192.09,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "5703",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T09:52:23Z"
+  },
+  {
+    "id": "txn_0034",
+    "amount": 78.86,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "7480",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T09:40:05Z"
+  },
+  {
+    "id": "txn_0035",
+    "amount": 198.32,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "7161",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T09:03:57Z"
+  },
+  {
+    "id": "txn_0036",
+    "amount": 60.75,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "1931",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T10:14:23Z"
+  },
+  {
+    "id": "txn_0037",
+    "amount": 51.56,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "5341",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T10:21:52Z"
+  },
+  {
+    "id": "txn_0038",
+    "amount": 395.82,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "6440",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T10:42:51Z"
+  },
+  {
+    "id": "txn_0039",
+    "amount": 35.0,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "1811",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T10:36:42Z"
+  },
+  {
+    "id": "txn_0040",
+    "amount": 164.67,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "5123",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T10:57:42Z"
+  },
+  {
+    "id": "txn_0041",
+    "amount": 78.66,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "6116",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T10:16:30Z"
+  },
+  {
+    "id": "txn_0042",
+    "amount": 21.47,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "0535",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T10:57:27Z"
+  },
+  {
+    "id": "txn_0043",
+    "amount": 239.47,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "9225",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T10:16:51Z"
+  },
+  {
+    "id": "txn_0044",
+    "amount": 18.87,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "9698",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T10:21:51Z"
+  },
+  {
+    "id": "txn_0045",
+    "amount": 261.68,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "1153",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T10:48:08Z"
+  },
+  {
+    "id": "txn_0046",
+    "amount": 118.75,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "8413",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T10:27:11Z"
+  },
+  {
+    "id": "txn_0047",
+    "amount": 494.03,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "7363",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T10:55:37Z"
+  },
+  {
+    "id": "txn_0048",
+    "amount": 110.42,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "4826",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T10:19:33Z"
+  },
+  {
+    "id": "txn_0049",
+    "amount": 36.14,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "3516",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T10:06:27Z"
+  },
+  {
+    "id": "txn_0050",
+    "amount": 190.87,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "6142",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T10:57:14Z"
+  },
+  {
+    "id": "txn_0051",
+    "amount": 96.11,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "4557",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T10:06:28Z"
+  },
+  {
+    "id": "txn_0052",
+    "amount": 34.06,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "1581",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T10:42:18Z"
+  },
+  {
+    "id": "txn_0053",
+    "amount": 444.12,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "2641",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T10:33:04Z"
+  },
+  {
+    "id": "txn_0054",
+    "amount": 181.9,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "0050",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T11:57:19Z"
+  },
+  {
+    "id": "txn_0055",
+    "amount": 150.89,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "2741",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T11:14:11Z"
+  },
+  {
+    "id": "txn_0056",
+    "amount": 37.45,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "3502",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T11:31:15Z"
+  },
+  {
+    "id": "txn_0057",
+    "amount": 270.02,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "9805",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T11:52:43Z"
+  },
+  {
+    "id": "txn_0058",
+    "amount": 127.77,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "3236",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T11:43:01Z"
+  },
+  {
+    "id": "txn_0059",
+    "amount": 269.74,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "4289",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T11:58:24Z"
+  },
+  {
+    "id": "txn_0060",
+    "amount": 194.36,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "9025",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T11:20:56Z"
+  },
+  {
+    "id": "txn_0061",
+    "amount": 54.17,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "4474",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T11:07:07Z"
+  },
+  {
+    "id": "txn_0062",
+    "amount": 132.37,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "5407",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T11:33:47Z"
+  },
+  {
+    "id": "txn_0063",
+    "amount": 18.69,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "3054",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T11:26:31Z"
+  },
+  {
+    "id": "txn_0064",
+    "amount": 478.78,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "1286",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T11:40:52Z"
+  },
+  {
+    "id": "txn_0065",
+    "amount": 325.9,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "3550",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T11:23:42Z"
+  },
+  {
+    "id": "txn_0066",
+    "amount": 98.05,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "7899",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T11:14:51Z"
+  },
+  {
+    "id": "txn_0067",
+    "amount": 25.6,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "6417",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T11:17:25Z"
+  },
+  {
+    "id": "txn_0068",
+    "amount": 67.04,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "2497",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T11:33:03Z"
+  },
+  {
+    "id": "txn_0069",
+    "amount": 348.92,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "9865",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T11:33:09Z"
+  },
+  {
+    "id": "txn_0070",
+    "amount": 28.99,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "1432",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T11:10:02Z"
+  },
+  {
+    "id": "txn_0071",
+    "amount": 24.28,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "4196",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T12:18:20Z"
+  },
+  {
+    "id": "txn_0072",
+    "amount": 72.12,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "2680",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T12:03:51Z"
+  },
+  {
+    "id": "txn_0073",
+    "amount": 273.29,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "2619",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T12:17:59Z"
+  },
+  {
+    "id": "txn_0074",
+    "amount": 458.34,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "5222",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T12:29:29Z"
+  },
+  {
+    "id": "txn_0075",
+    "amount": 159.78,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "1394",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T12:05:14Z"
+  },
+  {
+    "id": "txn_0076",
+    "amount": 165.89,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "4416",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T12:41:25Z"
+  },
+  {
+    "id": "txn_0077",
+    "amount": 17.33,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "7858",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T12:25:42Z"
+  },
+  {
+    "id": "txn_0078",
+    "amount": 386.83,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "0775",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T12:57:45Z"
+  },
+  {
+    "id": "txn_0079",
+    "amount": 105.61,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "3783",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T12:40:32Z"
+  },
+  {
+    "id": "txn_0080",
+    "amount": 430.58,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "4552",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T12:18:46Z"
+  },
+  {
+    "id": "txn_0081",
+    "amount": 27.36,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "6928",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T12:17:49Z"
+  },
+  {
+    "id": "txn_0082",
+    "amount": 104.04,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "5163",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T12:45:10Z"
+  },
+  {
+    "id": "txn_0083",
+    "amount": 182.21,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "6289",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T12:36:59Z"
+  },
+  {
+    "id": "txn_0084",
+    "amount": 193.63,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "7617",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T12:02:32Z"
+  },
+  {
+    "id": "txn_0085",
+    "amount": 495.95,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "8984",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T12:15:47Z"
+  },
+  {
+    "id": "txn_0086",
+    "amount": 425.41,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "9733",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T12:32:55Z"
+  },
+  {
+    "id": "txn_0087",
+    "amount": 16.32,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "3930",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T12:14:50Z"
+  },
+  {
+    "id": "txn_0088",
+    "amount": 74.6,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "5015",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T12:06:32Z"
+  },
+  {
+    "id": "txn_0089",
+    "amount": 96.15,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "3318",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T13:43:20Z"
+  },
+  {
+    "id": "txn_0090",
+    "amount": 94.97,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "6024",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T13:47:30Z"
+  },
+  {
+    "id": "txn_0091",
+    "amount": 145.89,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "3483",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T13:42:36Z"
+  },
+  {
+    "id": "txn_0092",
+    "amount": 340.35,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "4424",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T13:20:04Z"
+  },
+  {
+    "id": "txn_0093",
+    "amount": 479.07,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "5439",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T13:31:59Z"
+  },
+  {
+    "id": "txn_0094",
+    "amount": 366.29,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "2936",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T13:17:10Z"
+  },
+  {
+    "id": "txn_0095",
+    "amount": 401.43,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "1172",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T13:25:44Z"
+  },
+  {
+    "id": "txn_0096",
+    "amount": 200.32,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "8471",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T13:47:55Z"
+  },
+  {
+    "id": "txn_0097",
+    "amount": 286.54,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7432",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T13:15:44Z"
+  },
+  {
+    "id": "txn_0098",
+    "amount": 51.16,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "3371",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T13:06:04Z"
+  },
+  {
+    "id": "txn_0099",
+    "amount": 99.68,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "5655",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T13:03:07Z"
+  },
+  {
+    "id": "txn_0100",
+    "amount": 98.44,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "9019",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T13:16:56Z"
+  },
+  {
+    "id": "txn_0101",
+    "amount": 43.58,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "3296",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T13:37:28Z"
+  },
+  {
+    "id": "txn_0102",
+    "amount": 30.23,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "2528",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T13:53:57Z"
+  },
+  {
+    "id": "txn_0103",
+    "amount": 444.4,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "5891",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T13:32:38Z"
+  },
+  {
+    "id": "txn_0104",
+    "amount": 227.35,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "6545",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T13:11:29Z"
+  },
+  {
+    "id": "txn_0105",
+    "amount": 83.86,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "7449",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T13:33:31Z"
+  },
+  {
+    "id": "txn_0106",
+    "amount": 94.51,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "4733",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T14:40:08Z"
+  },
+  {
+    "id": "txn_0107",
+    "amount": 156.73,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "7073",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T14:21:51Z"
+  },
+  {
+    "id": "txn_0108",
+    "amount": 468.5,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "5627",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T14:36:09Z"
+  },
+  {
+    "id": "txn_0109",
+    "amount": 402.86,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "7748",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T14:44:58Z"
+  },
+  {
+    "id": "txn_0110",
+    "amount": 33.72,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "8655",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T14:34:14Z"
+  },
+  {
+    "id": "txn_0111",
+    "amount": 86.77,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "0460",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T14:47:44Z"
+  },
+  {
+    "id": "txn_0112",
+    "amount": 157.96,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7616",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T14:14:37Z"
+  },
+  {
+    "id": "txn_0113",
+    "amount": 86.51,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "1465",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T14:48:04Z"
+  },
+  {
+    "id": "txn_0114",
+    "amount": 266.63,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "8857",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T14:07:14Z"
+  },
+  {
+    "id": "txn_0115",
+    "amount": 81.17,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "4213",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T14:36:56Z"
+  },
+  {
+    "id": "txn_0116",
+    "amount": 52.95,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "8064",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T14:48:03Z"
+  },
+  {
+    "id": "txn_0117",
+    "amount": 372.43,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "7779",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T14:46:48Z"
+  },
+  {
+    "id": "txn_0118",
+    "amount": 165.84,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "1048",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T14:27:17Z"
+  },
+  {
+    "id": "txn_0119",
+    "amount": 161.83,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "1745",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T14:58:46Z"
+  },
+  {
+    "id": "txn_0120",
+    "amount": 117.58,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "6640",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T14:04:32Z"
+  },
+  {
+    "id": "txn_0121",
+    "amount": 113.02,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "9280",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T14:41:44Z"
+  },
+  {
+    "id": "txn_0122",
+    "amount": 37.51,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "7131",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T14:06:11Z"
+  },
+  {
+    "id": "txn_0123",
+    "amount": 166.88,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "8379",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T14:07:41Z"
+  },
+  {
+    "id": "txn_0124",
+    "amount": 13.07,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "1767",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T15:32:02Z"
+  },
+  {
+    "id": "txn_0125",
+    "amount": 61.81,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "5544",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T15:55:45Z"
+  },
+  {
+    "id": "txn_0126",
+    "amount": 67.43,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "8417",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T15:16:35Z"
+  },
+  {
+    "id": "txn_0127",
+    "amount": 25.39,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "5382",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T15:35:35Z"
+  },
+  {
+    "id": "txn_0128",
+    "amount": 29.81,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "5263",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T15:05:50Z"
+  },
+  {
+    "id": "txn_0129",
+    "amount": 18.3,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "4293",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T15:13:30Z"
+  },
+  {
+    "id": "txn_0130",
+    "amount": 97.08,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "2075",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T15:47:06Z"
+  },
+  {
+    "id": "txn_0131",
+    "amount": 285.94,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "0004",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T15:04:53Z"
+  },
+  {
+    "id": "txn_0132",
+    "amount": 481.48,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "8718",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T15:52:19Z"
+  },
+  {
+    "id": "txn_0133",
+    "amount": 94.31,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "1107",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T15:21:25Z"
+  },
+  {
+    "id": "txn_0134",
+    "amount": 247.56,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "9840",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T15:32:07Z"
+  },
+  {
+    "id": "txn_0135",
+    "amount": 64.99,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "1726",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T15:55:06Z"
+  },
+  {
+    "id": "txn_0136",
+    "amount": 18.98,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "3951",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T15:13:19Z"
+  },
+  {
+    "id": "txn_0137",
+    "amount": 294.69,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "2845",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T15:30:48Z"
+  },
+  {
+    "id": "txn_0138",
+    "amount": 103.34,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "2724",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T15:34:12Z"
+  },
+  {
+    "id": "txn_0139",
+    "amount": 260.06,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "3125",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T15:58:35Z"
+  },
+  {
+    "id": "txn_0140",
+    "amount": 125.21,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "8013",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T15:48:40Z"
+  },
+  {
+    "id": "txn_0141",
+    "amount": 40.01,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "5792",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T16:04:12Z"
+  },
+  {
+    "id": "txn_0142",
+    "amount": 303.31,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "8835",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T16:12:59Z"
+  },
+  {
+    "id": "txn_0143",
+    "amount": 162.98,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "2971",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T16:26:12Z"
+  },
+  {
+    "id": "txn_0144",
+    "amount": 56.59,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "1933",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T16:42:57Z"
+  },
+  {
+    "id": "txn_0145",
+    "amount": 109.92,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "4680",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T16:03:39Z"
+  },
+  {
+    "id": "txn_0146",
+    "amount": 194.52,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "4866",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T16:08:17Z"
+  },
+  {
+    "id": "txn_0147",
+    "amount": 61.5,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "3812",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T16:56:06Z"
+  },
+  {
+    "id": "txn_0148",
+    "amount": 57.39,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "0125",
+    "customer_id": "cust_014",
+    "timestamp": "2025-01-15T16:22:20Z"
+  },
+  {
+    "id": "txn_0149",
+    "amount": 333.78,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "1739",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T16:21:19Z"
+  },
+  {
+    "id": "txn_0150",
+    "amount": 87.86,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "5509",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T16:14:25Z"
+  },
+  {
+    "id": "txn_0151",
+    "amount": 388.73,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "1415",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T16:00:54Z"
+  },
+  {
+    "id": "txn_0152",
+    "amount": 230.06,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "6394",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T16:52:52Z"
+  },
+  {
+    "id": "txn_0153",
+    "amount": 68.06,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "3860",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T16:16:39Z"
+  },
+  {
+    "id": "txn_0154",
+    "amount": 114.45,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "4889",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T16:36:08Z"
+  },
+  {
+    "id": "txn_0155",
+    "amount": 210.77,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "9442",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T16:06:04Z"
+  },
+  {
+    "id": "txn_0156",
+    "amount": 321.77,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "6612",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T16:20:17Z"
+  },
+  {
+    "id": "txn_0157",
+    "amount": 91.91,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "3129",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T16:28:08Z"
+  },
+  {
+    "id": "txn_0158",
+    "amount": 136.44,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "8253",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T16:47:39Z"
+  },
+  {
+    "id": "txn_0159",
+    "amount": 263.34,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "8264",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T17:36:37Z"
+  },
+  {
+    "id": "txn_0160",
+    "amount": 217.96,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7232",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T17:00:19Z"
+  },
+  {
+    "id": "txn_0161",
+    "amount": 201.93,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "6148",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T17:08:38Z"
+  },
+  {
+    "id": "txn_0162",
+    "amount": 190.71,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "4076",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T17:32:13Z"
+  },
+  {
+    "id": "txn_0163",
+    "amount": 132.27,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "6667",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T17:51:30Z"
+  },
+  {
+    "id": "txn_0164",
+    "amount": 285.33,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "9293",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T17:34:43Z"
+  },
+  {
+    "id": "txn_0165",
+    "amount": 391.82,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "2035",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T17:33:08Z"
+  },
+  {
+    "id": "txn_0166",
+    "amount": 62.36,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "9752",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T17:14:12Z"
+  },
+  {
+    "id": "txn_0167",
+    "amount": 157.34,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "6915",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T17:29:20Z"
+  },
+  {
+    "id": "txn_0168",
+    "amount": 104.16,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "8204",
+    "customer_id": "cust_008",
+    "timestamp": "2025-01-15T17:13:20Z"
+  },
+  {
+    "id": "txn_0169",
+    "amount": 16.65,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "4333",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T17:12:24Z"
+  },
+  {
+    "id": "txn_0170",
+    "amount": 494.48,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "8179",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T17:51:49Z"
+  },
+  {
+    "id": "txn_0171",
+    "amount": 227.39,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "7405",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T17:40:47Z"
+  },
+  {
+    "id": "txn_0172",
+    "amount": 236.12,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "5968",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T17:17:06Z"
+  },
+  {
+    "id": "txn_0173",
+    "amount": 144.32,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "2815",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T17:51:30Z"
+  },
+  {
+    "id": "txn_0174",
+    "amount": 40.8,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "3321",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T17:06:01Z"
+  },
+  {
+    "id": "txn_0175",
+    "amount": 375.5,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "2750",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T17:29:21Z"
+  },
+  {
+    "id": "txn_0176",
+    "amount": 99.41,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "7255",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T18:41:02Z"
+  },
+  {
+    "id": "txn_0177",
+    "amount": 26.0,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "0156",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T18:36:34Z"
+  },
+  {
+    "id": "txn_0178",
+    "amount": 453.89,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "3266",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T18:33:29Z"
+  },
+  {
+    "id": "txn_0179",
+    "amount": 90.08,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "1668",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T18:18:01Z"
+  },
+  {
+    "id": "txn_0180",
+    "amount": 436.76,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "6133",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T18:17:40Z"
+  },
+  {
+    "id": "txn_0181",
+    "amount": 152.2,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "8591",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T18:10:27Z"
+  },
+  {
+    "id": "txn_0182",
+    "amount": 72.37,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "1301",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T18:40:50Z"
+  },
+  {
+    "id": "txn_0183",
+    "amount": 291.01,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "2771",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T18:32:30Z"
+  },
+  {
+    "id": "txn_0184",
+    "amount": 155.58,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "9337",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T18:16:37Z"
+  },
+  {
+    "id": "txn_0185",
+    "amount": 100.84,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "7198",
+    "customer_id": "cust_007",
+    "timestamp": "2025-01-15T18:11:01Z"
+  },
+  {
+    "id": "txn_0186",
+    "amount": 279.89,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "8707",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T18:36:16Z"
+  },
+  {
+    "id": "txn_0187",
+    "amount": 396.89,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "7412",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T18:57:38Z"
+  },
+  {
+    "id": "txn_0188",
+    "amount": 321.15,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "4391",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T18:19:45Z"
+  },
+  {
+    "id": "txn_0189",
+    "amount": 337.31,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "5646",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T18:07:07Z"
+  },
+  {
+    "id": "txn_0190",
+    "amount": 78.84,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "411111",
+    "card_last4": "0700",
+    "customer_id": "cust_006",
+    "timestamp": "2025-01-15T18:49:52Z"
+  },
+  {
+    "id": "txn_0191",
+    "amount": 65.18,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "5478",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T18:45:24Z"
+  },
+  {
+    "id": "txn_0192",
+    "amount": 274.71,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "8831",
+    "customer_id": "cust_002",
+    "timestamp": "2025-01-15T18:50:33Z"
+  },
+  {
+    "id": "txn_0193",
+    "amount": 347.1,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "5782",
+    "customer_id": "cust_012",
+    "timestamp": "2025-01-15T18:11:57Z"
+  },
+  {
+    "id": "txn_0194",
+    "amount": 15.53,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "1099",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T19:30:06Z"
+  },
+  {
+    "id": "txn_0195",
+    "amount": 441.69,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "9193",
+    "customer_id": "cust_015",
+    "timestamp": "2025-01-15T19:50:10Z"
+  },
+  {
+    "id": "txn_0196",
+    "amount": 170.37,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7215",
+    "customer_id": "cust_004",
+    "timestamp": "2025-01-15T19:01:29Z"
+  },
+  {
+    "id": "txn_0197",
+    "amount": 290.9,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "424242",
+    "card_last4": "5291",
+    "customer_id": "cust_003",
+    "timestamp": "2025-01-15T19:36:48Z"
+  },
+  {
+    "id": "txn_0198",
+    "amount": 496.36,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "7504",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T19:06:47Z"
+  },
+  {
+    "id": "txn_0199",
+    "amount": 29.05,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "376411",
+    "card_last4": "7037",
+    "customer_id": "cust_010",
+    "timestamp": "2025-01-15T19:44:10Z"
+  },
+  {
+    "id": "txn_0200",
+    "amount": 348.57,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "7556",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T19:03:45Z"
+  },
+  {
+    "id": "txn_0201",
+    "amount": 383.57,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "8466",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T19:20:28Z"
+  },
+  {
+    "id": "txn_0202",
+    "amount": 404.91,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "6283",
+    "customer_id": "cust_009",
+    "timestamp": "2025-01-15T19:01:21Z"
+  },
+  {
+    "id": "txn_0203",
+    "amount": 359.17,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "2352",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T19:04:58Z"
+  },
+  {
+    "id": "txn_0204",
+    "amount": 85.79,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "378282",
+    "card_last4": "8094",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T19:40:33Z"
+  },
+  {
+    "id": "txn_0205",
+    "amount": 371.58,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "7001",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T19:45:57Z"
+  },
+  {
+    "id": "txn_0206",
+    "amount": 82.11,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "551234",
+    "card_last4": "5296",
+    "customer_id": "cust_011",
+    "timestamp": "2025-01-15T19:24:55Z"
+  },
+  {
+    "id": "txn_0207",
+    "amount": 90.76,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "431940",
+    "card_last4": "4621",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T19:05:52Z"
+  },
+  {
+    "id": "txn_0208",
+    "amount": 50.56,
+    "currency": "BRL",
+    "country": "Brazil",
+    "card_bin": "510510",
+    "card_last4": "9856",
+    "customer_id": "cust_001",
+    "timestamp": "2025-01-15T19:52:22Z"
+  },
+  {
+    "id": "txn_0209",
+    "amount": 199.9,
+    "currency": "MXN",
+    "country": "Mexico",
+    "card_bin": "371449",
+    "card_last4": "8387",
+    "customer_id": "cust_013",
+    "timestamp": "2025-01-15T19:08:39Z"
+  },
+  {
+    "id": "txn_0210",
+    "amount": 98.73,
+    "currency": "COP",
+    "country": "Colombia",
+    "card_bin": "520082",
+    "card_last4": "1342",
+    "customer_id": "cust_005",
+    "timestamp": "2025-01-15T19:22:21Z"
+  }
+]

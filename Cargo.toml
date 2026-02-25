@@ -21,6 +21,10 @@ path = "api/authorize.rs"
 name = "report"
 path = "api/report.rs"
 
+[[bin]]
+name = "generate_outputs"
+path = "src/bin/generate_outputs.rs"
+
 [dependencies]
 vercel_runtime = "1"
 tokio = { version = "1", features = ["full"] }
