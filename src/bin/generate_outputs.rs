@@ -1,8 +1,8 @@
-/// CLI tool to generate test data and performance report files.
-///
-/// Produces:
-/// - `output/test_transactions.json` — 210 test transactions
-/// - `output/performance_report.json` — Full performance report (no-retry vs smart-retry)
+//! CLI tool to generate test data and performance report files.
+//!
+//! Produces:
+//! - `output/test_transactions.json` — 210 test transactions
+//! - `output/performance_report.json` — Full performance report (no-retry vs smart-retry)
 
 use yuno_internal_challenge::data::get_test_dataset;
 use yuno_internal_challenge::engine::RoutingEngine;
