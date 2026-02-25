@@ -40,6 +40,7 @@ FashionForward is a rapidly growing fashion marketplace operating across **Brazi
 | **vercel-community/rust** | Rust runtime for Vercel serverless functions |
 | **tokio** | Async runtime |
 | **serde / serde_json** | Serialization and JSON handling |
+| **rand** | Deterministic RNG with `StdRng` for reproducible PSP simulation |
 
 ---
 
@@ -71,18 +72,113 @@ api/
 └── report.rs                 # POST /api/report
 ```
 
-### Key Design Decisions
+### Data Flow
 
-1. **Deterministic PSP Simulation**: Uses seeded RNG based on `hash(card_bin + card_last4 + psp_id + amount)` so the same transaction produces the same result per PSP — enabling reproducible demos while maintaining realistic behavior.
+```
+                        ┌─────────────────────────────┐
+                        │   POST /api/authorize        │
+                        │   (incoming transaction)     │
+                        └──────────────┬──────────────┘
+                                       │
+                                       ▼
+                        ┌─────────────────────────────┐
+                        │       RoutingEngine          │
+                        │  ┌─────────────────────┐    │
+                        │  │ Strategy: select PSP │    │
+                        │  │ order based on goal  │    │
+                        │  └──────────┬──────────┘    │
+                        └─────────────┼───────────────┘
+                                      │
+                    ┌─────────────────┼─────────────────┐
+                    ▼                 ▼                  ▼
+             ┌───────────┐    ┌───────────┐      ┌───────────┐
+             │  PSP #1   │    │  PSP #2   │      │  PSP #3   │
+             │ (primary) │    │ (backup)  │      │ (backup)  │
+             └─────┬─────┘    └─────┬─────┘      └─────┬─────┘
+                   │                │                   │
+                   ▼                ▼                   ▼
+              PspSimulator    PspSimulator         PspSimulator
+              (seeded RNG)    (seeded RNG)         (seeded RNG)
+```
 
-2. **Hard vs Soft Decline Classification**: Hard declines (insufficient funds, expired card, stolen card, invalid card) fail immediately — retrying won't help. Soft declines (issuer unavailable, suspected fraud, do not honor, processor declined) trigger automatic retry with the next available PSP.
+**Retry flow:**
 
-3. **Strategy-Based PSP Selection**: Three routing strategies allow optimizing for different business goals:
-   - `optimize_for_approvals` — highest success rate PSPs first
-   - `optimize_for_cost` — cheapest PSPs first
-   - `balanced` — weighted score combining success rate and cost
+1. The engine selects PSPs in order based on the routing strategy.
+2. The transaction is sent to PSP #1.
+3. If **approved** — return success immediately.
+4. If **hard decline** (InsufficientFunds, CardExpired, InvalidCard, StolenCard) — stop. The card genuinely cannot be charged. No retry.
+5. If **soft decline** (IssuerUnavailable, SuspectedFraud, DoNotHonor, ProcessorDeclined) — retry with PSP #2.
+6. If **PSP unavailable** — cascade immediately to the next PSP without counting it as a decline attempt.
+7. Repeat until approved or all PSPs exhausted (up to 3 attempts).
 
-4. **Stateless Routing Engine**: Each routing call is independent — no shared state between requests. This aligns with the serverless deployment model.
+---
+
+## Key Design Decisions
+
+### 1. Deterministic PSP Simulation
+
+The simulator uses `hash(card_bin + card_last4 + psp_id + amount_as_cents)` as a seed for `StdRng`. This means:
+
+- **Same card at the same PSP always produces the same result.** Running the engine twice with identical input yields identical output — critical for reproducible demos, testing, and debugging.
+- **Different PSPs produce different results for the same card.** Because `psp_id` is part of the hash, a card declined at PSP #1 may succeed at PSP #2. This is what makes retry valuable: each PSP has a distinct relationship with issuing banks, and the simulator reflects that reality.
+- **Determinism does not sacrifice realism.** Each PSP still has its own configured success rate, latency range, and decline reason distribution. The seed simply ensures consistency across runs.
+
+### 2. Hard vs Soft Decline Classification
+
+The distinction between hard and soft declines is the foundation of the retry logic:
+
+**Hard declines** (do NOT retry):
+- `InsufficientFunds` — the cardholder does not have the money
+- `CardExpired` — the card is no longer valid
+- `InvalidCard` — the card number is wrong
+- `StolenCard` — the card has been reported stolen
+
+These are **permanent**. The card genuinely cannot be charged regardless of which PSP processes it. Retrying wastes time, incurs additional PSP fees, and cannot change the outcome.
+
+**Soft declines** (retry with next PSP):
+- `IssuerUnavailable` — the issuing bank is temporarily unreachable
+- `SuspectedFraud` — the transaction was flagged by fraud detection
+- `DoNotHonor` — a generic decline from the issuer
+- `ProcessorDeclined` — the PSP's processor rejected the transaction
+
+These are often **PSP-specific**. A different PSP may have a different connection to the issuing bank, different fraud scoring models, or different processing infrastructure. What fails at one PSP frequently succeeds at another.
+
+### 3. PSP Selection Strategy Tradeoffs
+
+Three routing strategies allow the merchant to optimize for different business goals:
+
+| Strategy | Sorting Logic | Best For |
+|---|---|---|
+| `OptimizeForApprovals` | PSPs sorted by highest `base_success_rate` first | Maximizing authorization rate; merchants who prioritize conversion over cost |
+| `OptimizeForCost` | PSPs sorted by lowest effective fee (`fee_percentage + fee_fixed / avg_amount`) first | Minimizing processing costs; high-volume merchants with thin margins |
+| `Balanced` | PSPs scored by `success_rate * 0.7 + (1 - normalized_fee) * 0.3` | Practical middle ground; most merchants in production |
+
+The tradeoff is real: the cheapest PSP is rarely the one with the highest approval rate. `Balanced` weights approval rate at 70% and cost at 30%, reflecting that a declined transaction generates zero revenue regardless of how cheap the PSP is.
+
+### 4. Revenue Impact Calculation
+
+The business impact is calculated as:
+
+```
+additional_approvals = smart_retry_approved - no_retry_approved
+estimated_revenue    = additional_approvals * average_transaction_value
+```
+
+For FashionForward's scale:
+- ~45,000 daily transactions with a ~22% decline rate = ~9,900 declines/day
+- Even a **9 percentage point improvement** in authorization rate means ~4,050 additional daily approvals
+- At an average order value of $50, that is approximately **$200K/day in recovered revenue**
+
+This is the core value proposition: smart retry does not just improve a metric — it recovers real revenue that was being lost to primitive routing.
+
+### 5. Stateless Architecture
+
+Each routing request is fully independent. The `RoutingEngine` holds no shared state between requests — no in-memory caches, no session data, no accumulated statistics. This design:
+
+- Aligns perfectly with **serverless deployment** where each function invocation is isolated
+- Enables **horizontal scaling** with zero coordination overhead
+- Eliminates an entire class of **concurrency bugs** (no mutexes, no race conditions)
+- Makes the system **trivially testable** — every test is a pure function from input to output
 
 ---
 
@@ -242,6 +338,44 @@ curl -X POST https://your-app.vercel.app/api/report \
 
 ---
 
+## How the Report Works
+
+The `/api/report` endpoint runs a **two-scenario comparison** to quantify the impact of smart routing. Both scenarios process the exact same set of transactions through the same deterministic PSP simulator, ensuring a fair comparison.
+
+### Scenario 1: No Retry (baseline)
+
+Each transaction is sent to PSP #1 only. If the PSP declines the transaction for any reason — hard or soft — the decline is final. This represents FashionForward's current routing behavior.
+
+### Scenario 2: Smart Retry (routing engine)
+
+Each transaction is routed through the full engine:
+1. PSPs are ordered according to the selected strategy.
+2. The transaction is sent to the first PSP.
+3. On a **soft decline**, the engine retries with the next PSP in the list.
+4. On a **hard decline**, the engine stops immediately — retrying cannot help.
+5. On **PSP unavailable**, the engine cascades to the next PSP without counting it as a decline.
+6. Up to 3 PSPs are tried per transaction.
+
+### Metrics Calculated
+
+| Metric | Description |
+|---|---|
+| `authorization_rate` | Percentage of transactions approved (approved / total * 100) |
+| `avg_attempts` | Mean number of PSP attempts per transaction |
+| `avg_latency_ms` | Mean total latency across all attempts per transaction |
+| `by_country` | Per-country breakdown: no-retry rate, smart-retry rate, improvement |
+| `by_psp` | Per-PSP breakdown: total attempts, approvals, declines, approval rate, avg latency |
+
+### Business Impact
+
+The `improvement` section quantifies the real-world value:
+
+- **`rate_lift_percentage`**: Authorization rate improvement in percentage points (e.g., 78% to 87% = 9 points).
+- **`additional_approvals`**: Absolute number of transactions recovered by retry (smart approved - baseline approved).
+- **`estimated_revenue_recovered_usd`**: `additional_approvals * average_transaction_value` from the batch. This extrapolates directly to daily revenue at production scale.
+
+---
+
 ## PSP Configuration
 
 | PSP | Country | Success Rate | Latency | Fee |
@@ -260,8 +394,23 @@ curl -X POST https://your-app.vercel.app/api/report \
 
 ## Stretch Goals
 
-- **Cost-Aware Routing**: PSP selection considers processing fees alongside approval rates. Three strategies available: `optimize_for_approvals`, `optimize_for_cost`, `balanced`.
-- **Real-Time Cascading**: If a PSP is unavailable (timeout/downtime), immediately cascade to the next PSP without counting it as a decline.
+### Cost-Aware Routing
+
+PSP selection goes beyond approval rates. Three strategies are available, each sorting the PSP list differently before the retry loop begins:
+
+- **`OptimizeForApprovals`**: PSPs sorted by `base_success_rate` descending. Maximizes authorization rate at the potential expense of higher processing fees.
+- **`OptimizeForCost`**: PSPs sorted by effective fee ascending, calculated as `fee_percentage + fee_fixed / average_amount`. Chooses the cheapest processing path first, accepting a potentially lower approval rate.
+- **`Balanced`**: PSPs scored with a weighted formula: `success_rate * 0.7 + (1 - normalized_fee) * 0.3`. This weights approval rate at 70% (because a declined transaction generates zero revenue regardless of fee) while still favoring cheaper PSPs when approval rates are comparable.
+
+### Real-Time Cascading
+
+If a PSP returns `PspUnavailable` (simulated approximately 10% of the time), the engine immediately cascades to the next PSP in the list. This cascade is handled differently from a normal decline:
+
+- It does **not** count as a decline attempt in the retry budget.
+- It does **not** appear as a decline in the per-PSP metrics (PSP unavailable events are excluded from decline counts).
+- It **does** add latency, which is reflected in the total latency for the transaction.
+
+This prevents transient PSP downtime from artificially inflating decline rates and ensures that the merchant's authorization rate is not penalized by infrastructure issues outside their control.
 
 ---
 
@@ -276,3 +425,17 @@ vercel --prod
 # Or just push to main for auto-deploy
 git push origin main
 ```
+
+---
+
+## Project Structure
+
+The project was developed incrementally across feature branches, each focused on a distinct layer of the system:
+
+| Branch | Scope |
+|---|---|
+| `feature/psp-simulator` | PSP simulation engine: deterministic seeded RNG, 9 PSP configurations, decline reason distributions, latency simulation, and test data generation |
+| `feature/routing-engine` | Core routing logic: hard/soft decline classification, retry orchestration, PSP selection strategies (approval, cost, balanced), and cascading on PSP unavailability |
+| `feature/api-reports` | API endpoints (`/authorize`, `/report`) and performance reporting: two-scenario comparison, per-country and per-PSP breakdowns, business impact calculation |
+
+Each branch was merged into `main` sequentially. The commit history follows the [Gitmoji](https://gitmoji.dev/) convention, providing a clear narrative of how the system was built from the ground up.

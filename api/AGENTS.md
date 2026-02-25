@@ -20,6 +20,10 @@ There is no router. Each file is a standalone binary mapped 1:1 to a path.
 
 - **`health.rs`** — `GET /api/health`. Returns JSON with service status and version. Used for uptime checks and deployment verification.
 
+- **`authorize.rs`** — `POST /api/authorize`. Accepts a single transaction authorization request, validates input fields (amount, currency, country, card details), routes through PSPs using the `RoutingEngine`, and returns the routing result with all attempt details. Returns 400 for invalid input, 405 for non-POST methods.
+
+- **`report.rs`** — `POST /api/report`. Generates a batch performance report comparing no-retry vs smart-retry routing. Accepts optional `transaction_count` and `routing_strategy` in the request body (defaults to 200 transactions with OptimizeForApprovals). Returns a full `PerformanceReport` with aggregate metrics, country breakdown, and PSP breakdown. Returns 405 for non-POST methods.
+
 ## Handler Pattern
 
 Every handler must follow this exact boilerplate:
