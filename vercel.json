@@ -8,6 +8,14 @@
     {
       "source": "/api/health",
       "destination": "/api/health"
+    },
+    {
+      "source": "/api/authorize",
+      "destination": "/api/authorize"
+    },
+    {
+      "source": "/api/report",
+      "destination": "/api/report"
     }
   ]
 }
