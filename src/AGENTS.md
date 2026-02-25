@@ -7,6 +7,11 @@ This is the shared library crate (`lib.rs`) imported by every serverless handler
 ## Current Modules
 
 - **`lib.rs`** — Crate root. Exposes `version()` helper and re-exports all public modules.
+- **`models/`** — Shared domain types: `Transaction`, `PspConfig`, `DeclineReason`, `RoutingResult`, `PerformanceReport`, etc.
+- **`simulator/`** — PSP behavior simulator. Deterministic, seeded RNG. 9 PSPs (3 per country) with distinct success rates, latency, fees, and decline distributions. See `src/simulator/AGENTS.md`.
+- **`engine/`** — Core routing engine with retry logic and PSP selection strategies. See `src/engine/AGENTS.md`.
+- **`data/`** — Test data generation. Produces 210+ realistic transactions across 3 countries. See `src/data/AGENTS.md`.
+- **`report/`** — Performance report generation. Compares no-retry vs smart-retry scenarios. See `src/report/AGENTS.md`.
 
 ## Adding New Modules
 
