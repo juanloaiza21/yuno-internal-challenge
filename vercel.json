@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/**/*.rs": {
+      "runtime": "vercel-community/rust@latest"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    }
+  ]
+}
